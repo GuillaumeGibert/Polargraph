@@ -143,7 +143,7 @@ def usage():
 
 def main(argv):
 	# sets default values (input image filename, fps, comPort, baudRate)
-	inputFilename = 'images/github-logo.jpg'
+	inputFilename = '../images/python-logo.png'
 	fps = 5.0
 	comPort = 'COM8'
 	baudRate = 115200
