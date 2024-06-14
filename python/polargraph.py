@@ -48,7 +48,7 @@ def processImage(filename, threshold):
 	#cv2.imwrite('output/img_gray.jpg', img_gray)
 	# applies thresholding
 	print("--> Thresholding")
-	ret, img_thresh = cv2.threshold(img_gray, threshold, 255, cv2.THRESH_BINARY)
+	ret, img_thresh = cv2.threshold(img_gray, int(threshold), 255, cv2.THRESH_BINARY)
 	cv2.imshow('Binary image', img_thresh)
 	#cv2.imwrite('output/img_thresh.jpg', img_thresh)
 	# detects contours
@@ -138,18 +138,18 @@ def sendContoursToArduinoBoard(arduino, contoursInMm, fps, samplingFactor):
 			
 
 def usage():
-	print("polargraph.py -i <inputfile> -f <fps> -p <comPort> -b <baudRate> -s <scaling_factor> -c <contour_sampling>")
+	print("polargraph.py -i <inputfile> -f <fps> -p <comPort> -b <baudRate> -s <scaling_factor> -c <contour_sampling> -t <threshold>")
 	
 
 def main(argv):
-	# sets default values (input image filename, fps, comPort, baudRate)
+	# sets default values (input image filename, fps, comPort, baudRate, threshold)
 	inputFilename = '../images/python-logo.png'
 	fps = 5.0
 	comPort = 'COM8'
 	baudRate = 115200
 	scalingFactor = 1
 	samplingFactor = 1
-	threshold = 150
+	threshold = 80
 	
 	# parses the command line to look for options
 	try:
