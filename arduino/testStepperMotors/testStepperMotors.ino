@@ -1,3 +1,6 @@
+// More information about stepper motor control can be found here: 
+// https://learn.adafruit.com/adafruit-motor-shield-v2-for-arduino/using-stepper-motors
+
 #include <Wire.h>
 #include <Adafruit_MotorShield.h>
 
@@ -7,9 +10,9 @@ int _nbSteps = 200; // number of steps to perform
 int _defaultNbStepsStepperMotor = 200; // number of steps / revolution of the stepper motors
 
 // ----- INTERNAL PARAMS ----- //
-// Create the motor shield object with the default I2C address 0x60
+// creates the motor shield object with the default I2C address 0x60
 Adafruit_MotorShield AFMS = Adafruit_MotorShield(); //write an adress if different
-// Connect a stepper motor with A and B steps per revolution
+// connects a stepper motor with A and B steps per revolution
 // to motor port #1 (M1 and M2)
 Adafruit_StepperMotor *stepperMotorA = AFMS.getStepper(_defaultNbStepsStepperMotor, 1); // A = 200 steps/revolution
 // to motor port #2 (M3 and M4)
