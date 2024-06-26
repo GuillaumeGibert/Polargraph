@@ -10,8 +10,8 @@ I propose this project to engineering students who want to discover robotics. Du
 
 ### Built With
 
-* [![Python][python-shield]][python-url]
 * [![Arduino][arduino-shield]][arduino-url]
+* [![Python][python-shield]][python-url]
 * [![OpenCV][opencv-shield]][opencv-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -20,14 +20,16 @@ I propose this project to engineering students who want to discover robotics. Du
 ## Getting Started
 
 To set up the project locally, you need to install (if not already the case) some dependencies.
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and running follow these steps.
 
 ### Prerequisites
 
 * Arduino
+
 Launch Arduino IDE and install the library Adafruit Motor Shield v2
 
 * Python
+
 Install the pySerial library
   ```sh
   pip install pyserial
@@ -55,6 +57,7 @@ Install the OpenCV library
 ## Usage
 
 ### Check the position of the stepper motors
+
 1. Open Arduino IDE
 2. Open the code `testStepperMotors.ino`
 3. Compile and upload it to your Arduino board
