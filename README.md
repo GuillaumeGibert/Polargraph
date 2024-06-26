@@ -4,7 +4,7 @@
 
 [![Project Screen Shot][project-screenshot]]()
 
-I propose this project to engineering students who want to discover robotics. During this 2-days project, students work on image processing, mecahnics, electronics and motor control. They assemble the system and test it thanks to the provided Arduino code. Then, they learn how to extract image contours using [Python](https://www.python.org/) and the [OpenCV library](https://opencv.org/). Finally, they convert cartesian coordinates of the contours to numbers of steps to control the two stepper motors. The pen can be lift up/down thansk to a servo motor activated between contours.
+I propose this project to engineering students who want to discover robotics. During this 2-days project, students work on image processing, mechanics, electronics and motor control. They assemble the system and test it thanks to the provided Arduino code. Then, they learn how to extract image contours using [Python](https://www.python.org/) and the [OpenCV library](https://opencv.org/). Finally, they convert cartesian coordinates of the contours to numbers of steps to control the two stepper motors. The pen can be lift up/down thanks to a servo motor activated between contours.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
